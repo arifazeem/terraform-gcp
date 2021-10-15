@@ -7,7 +7,7 @@ terraform {
   }
 }
 resource "google_storage_bucket" "static-sitei" {
-  name          = "image-test-store1"
+  name          = "image-test-store12"
   location      = "EU"
   force_destroy = true
 } 
