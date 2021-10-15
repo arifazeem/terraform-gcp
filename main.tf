@@ -7,14 +7,7 @@ terraform {
   }
 }
 resource "google_storage_bucket" "static-sitei" {
-  name          = "image-test-store"
+  name          = "image-test-store1"
   location      = "EU"
   force_destroy = true
-
-  uniform_bucket_level_access = true
-
-  website {
-    main_page_suffix = "index.html"
-    not_found_page   = "404.html"
-  }
 } 
