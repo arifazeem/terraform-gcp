@@ -1,7 +1,9 @@
 terraform {
-  backend "gcs" {
-    bucket = "terraform-gcs-mybucket"
-    prefix = "new-test"
+  backend "remote" {
+    organization = "example-org-8fbf9e"
+    workspaces {
+      name = "terraform-gcp"
+    }
   }
 }
 resource "google_storage_bucket" "static-site" {
