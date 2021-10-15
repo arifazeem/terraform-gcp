@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-resource "google_storage_bucket" "static-site" {
+resource "google_storage_bucket" "static-sitei" {
   name          = "image-test-store"
   location      = "EU"
   force_destroy = true
