@@ -6,12 +6,7 @@
 #     }
 #   }
 # }
-terraform {
-  backend "gcs" {
-    bucket = "terraform-gcs-mybucket"
-    prefix = "dev-filemage"
-  }
-}
+
 
 resource "google_storage_bucket" "static-sitei" {
   name          = "image-test-store12"
