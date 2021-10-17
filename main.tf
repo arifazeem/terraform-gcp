@@ -7,3 +7,9 @@
 #   }
 # }
 
+
+resource "google_storage_bucket" "static-sitei" {
+  name          = "image-test-store12"
+  location      = "EU"
+  force_destroy = true
+} 
